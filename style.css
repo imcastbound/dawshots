@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    font-size: 72px;
+    color:azure;
+    text-align: center;
+    padding-top: 25%;
+    font-family: 'Bodoni Moda', serif;
+
+      
+    animation:fadeIn; 
+    animation-duration: 10s;
+    
+}
+
+h2 {
+    font-size: 72px;
+    color:azure;
+    text-align: center;
+    font-family: 'Bodoni Moda', serif;
+    animation:fadeIn; 
+    animation-duration: 20s;
+}
