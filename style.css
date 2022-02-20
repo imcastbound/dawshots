@@ -1,25 +1,402 @@
-body {
-    background-color: black;
+@font-face {
+    font-family: "BodoniSans";
+    src: url("./fonts/bodoni-sans-text/Bodoni\ Sans\ Text\ Regular.otf");
 }
 
-h1 {
-    font-size: 72px;
-    color:azure;
+
+html body {
+    background-color: #212529;
+}
+
+#title {
+    white-space: nowrap;
     text-align: center;
     padding-top: 25%;
-    font-family: 'Bodoni Moda', serif;
-
-      
     animation:fadeIn; 
     animation-duration: 10s;
+    padding-bottom: 20em;
     
 }
 
-h2 {
-    font-size: 72px;
-    color:azure;
-    text-align: center;
-    font-family: 'Bodoni Moda', serif;
-    animation:fadeIn; 
-    animation-duration: 20s;
+#border:hover {
+    border:#ADB5BD 1px solid;
+    margin: 0 350 0 350;
 }
+
+#titleText {
+    font-size: 72px;
+    color:#ADB5BD;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#titleText:hover {
+    color:#F8F9FA;
+    animation:pulse;
+    animation-duration: 1s;
+    cursor: default;
+}
+
+p {
+    color:white;
+    font-family: 'Bodoni Moda', serif;
+    color: #ADB5BD;
+    font-size: 50px;
+    background: linear-gradient(to left, transparent 50%, #212529 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+    transition:all .5s ease;
+}
+
+#quote {
+    position: absolute;
+    top: 110px;
+    margin: 0 40rem 0 1rem;
+}
+
+p:hover {
+    color:#F8F9FA;
+    /* background-color: #212529; */
+    cursor: default;
+    background-position:left bottom;
+}
+
+.navbar > .navbar-brand {
+    color: #ADB5BD;
+    font-family: 'BodoniSans';
+    font-size: 20px;
+}
+
+.navbar > .active > a {
+    color:#F8F9FA;
+    text-decoration: none;
+    font-family: 'BodoniSans';
+    font-size: 20px;
+}
+
+.navbar > .navbar-brand:hover {
+    color: #F8F9FA;
+    cursor: pointer;
+}
+
+.nav-item > .nav-link {
+    color: #ADB5BD;
+    font-family: 'BodoniSans';
+    font-size: 15px;
+}
+
+.navbar-nav > .active > a {
+    color:#F8F9FA;
+    text-decoration: none;
+}
+
+.nav-item .nav-link:hover {
+    color:#F8F9FA;
+    cursor:pointer;
+}
+
+.navbar-brand:hover {
+    color:#ADB5BD;
+    cursor: default;
+}
+
+.nav-link:hover {
+    color: #ADB5BD;
+    cursor: default;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+    align-items: start;
+  }
+  
+.aspect-box {
+    aspect-ratio: 2 / 2;
+  }
+
+.reveal{
+    position: relative;
+    opacity: 0;
+    transition: .5s all ease;
+  }
+.reveal.active{
+    opacity: 1;
+  }
+
+#carousel {
+    background-color: #ADB5BD;
+    height: 750px;
+}
+#myCarousel {
+    margin: auto;
+    padding-top: 10px;
+    height: 450px;
+    width: 500px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 600px;
+    
+}
+
+.carousel .carousel-indicators li {
+    width: 30px;
+   height: 5px;
+   border-radius: 10%;
+   border-color: #ADB5BD;
+ }
+
+
+.container:first-child {
+    white-space: nowrap;
+    text-align: center;
+    animation:fadeIn; 
+    animation-duration: 10s;
+}
+
+div #carousel-txt {
+    margin-top: 20px;
+    font-size: 30px;
+    color:#212529;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: bold;
+    display: inline-block;
+}
+
+div #carousel-txt:hover {
+    color:#F8F9FA;
+    animation:pulse;
+    animation-duration: 1s;
+    cursor: default;
+}
+
+div #sla-txt {
+    margin-top: 20px;
+    font-size: 30px;
+    color:#ADB5BD;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 50px;
+}
+
+div #sla-txt:hover {
+    color:#F8F9FA;
+    animation:pulse;
+    animation-duration: 1s;
+    cursor: default;
+}
+
+.container div {
+    text-align:center;
+}
+
+.space {
+    padding: 1rem;
+}
+
+.carousel-control {
+    height:625px;
+    position: absolute;
+    margin-top:10px;
+}
+
+#so-long-aphasia {
+    background-image: url('./photos/so-long-aphasia/Dawshots-114554.jpg');
+    height: 750px;
+    background-size: cover;
+    margin: 10px;
+
+}
+
+#sla-text {
+    color:#ADB5BD;
+    font-size: 72px;
+    position: absolute;
+    top: 515px;
+    left: 50px;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: bold;
+    cursor: default;
+}
+
+
+#sla-btn {
+    width:300px;
+    height:50px;
+    position: absolute;
+    font-family: 'BodoniSans';
+    font-size: 18px;
+    color: #ADB5BD;
+    top: 620px;
+    left: 75px;
+    border: none;
+    background: linear-gradient(to left, transparent 50%, #212529 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+    transition:all .5s ease
+}
+
+#sla-btn:hover {
+    background-position: left bottom;
+    border:#ADB5BD solid 1px;
+}
+
+#twfno {
+    background-color:#212529;
+    height: 750px;
+    margin: 10px;
+
+}
+
+#twfno img {
+    height: 750px;
+    width: 500px;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+#twfno-txt2 {
+    top: 180px;
+    left: 1000px;
+    /* margin-right: 900px; */
+    line-height: 150px;
+    position: absolute;
+    font-size: 72px;
+    font-family: 'Bodoni Moda', serif;
+    color:#ADB5BD;
+}
+
+#twfno-txt {
+    top: 100px;
+    left: 50px;
+    margin-right: 900px;
+    line-height: 150px;
+    position: absolute;
+    font-size: 72px;
+    font-family: 'Bodoni Moda', serif;
+    color:#ADB5BD;
+    
+}
+
+#twfno-btn {
+    top: 600px;
+    left: 475px;
+    width:300px;
+    height:50px;
+    position: absolute;
+    font-family: 'BodoniSans';
+    font-size: 18px;
+    color: #ADB5BD;
+    border: none;
+    background: linear-gradient(to left, transparent 50%, #212529 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+    transition:all .5s ease
+}
+
+#twfno-btn:hover {
+    background-position: left bottom;
+    border:#ADB5BD solid 1px;
+}
+
+#follow {
+    background-color: #ADB5BD;
+    height: 375px;
+}
+
+#follow div {
+    padding-left: 575px;
+}
+
+div i{
+    padding-left: 3px;
+}
+
+div i:hover {
+    animation:pulse;
+    animation-duration: .5s;
+}
+
+
+
+#follow-txt {
+    font-size: 30px;
+    font-family: 'BodoniSans';
+    margin-top: 100px;
+    white-space: 1px;
+    display: inline-block;
+}
+
+.fa-brands {
+    color:#212529;
+    text-decoration: none;
+}
+
+#gallery {
+    animation:fadeIn; 
+    animation-duration: 10s;
+    padding-bottom: 20em;
+}
+
+.row.col#photo {
+    border: solid 2px;
+    max-height: 200px;
+    min-height: 200px;
+}
+
+.row.col#sla-photo {
+    border: solid 2px;
+    max-height: 300px;
+    min-height: 300px;
+}
+
+.row.col#twfno-photo {
+    border: solid 2px;
+    max-height: 500px;
+    min-height: 500px;
+}
+
+img#photo {
+    border: solid 2px;
+    max-height: 200px;
+    min-height: 200px;  
+}
+
+
+.btn img {
+    size:cover;
+}
+
+.colimg:hover {
+    border: #ADB5BD solid 2px;
+    max-height: 200px;
+    animation: pulse;
+    animation-duration: 5s;
+}
+
+.col#sla-col:hover {
+    border: #ADB5BD solid 2px;
+    max-height: 300px;
+    animation: pulse;
+    animation-duration: 5s;
+}
+
+.col#twfno-col:hover {
+    border: #ADB5BD solid 2px;
+    max-height: 1000px;
+    animation: pulse;
+    animation-duration: 5s;
+}
+
