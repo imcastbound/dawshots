@@ -388,7 +388,7 @@ img#photo {
 
 .col#sla-col:hover {
     border: #ADB5BD solid 2px;
-    max-height: 300px;
+    max-height: 500px;
     animation: pulse;
     animation-duration: 5s;
 }
